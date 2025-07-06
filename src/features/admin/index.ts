@@ -11,6 +11,9 @@ export { NewsletterManagement } from './components/NewsletterManagement';
 export { UserRoleManagement } from './components/UserRoleManagement';
 export { WeeklyClassScheduler } from './components/WeeklyClassScheduler';
 export { ClassTypeManager } from './components/ClassTypeManager';
+export { ClassAssignmentManager } from './components/ClassAssignmentManager';
+export { InstructorDashboard } from './components/InstructorDashboard';
+export { PaymentManagement } from './components/PaymentManagement';
 
 // Contexts
 export * from './contexts/AdminContext';

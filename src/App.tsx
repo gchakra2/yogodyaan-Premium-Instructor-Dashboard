@@ -14,6 +14,7 @@ import { ProtectedAdminRoute } from './features/auth/components/ProtectedAdminRo
 
 // Page imports - updated paths
 import { AdminDashboard } from './features/admin/pages/AdminDashboard'
+import { InstructorPortal } from './features/admin/pages/InstructorPortal'
 import { AdminLogin } from './features/auth/pages/AdminLogin'
 import { Login } from './features/auth/pages/Login'
 import { ArticleView } from './features/learning/pages/ArticleView'
@@ -42,6 +43,16 @@ function App() {
                 element={
                   <ProtectedAdminRoute>
                     <AdminDashboard />
+                  </ProtectedAdminRoute>
+                } 
+              />
+              
+              {/* Instructor Portal */}
+              <Route 
+                path="/instructor" 
+                element={
+                  <ProtectedAdminRoute>
+                    <InstructorPortal />
                   </ProtectedAdminRoute>
                 } 
               />
